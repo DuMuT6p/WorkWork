@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<overlay id="WorkWork" 
+		xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <statusbar id="status-bar">
+  <statusbarpanel id="my-panel" label="Hello, Idiot"  />
+    <script type="text/javascript" src="moveTab.js"></script>
+    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="linkCount.js"></script>
+
+	<button id="button1" label="Hit Me Baby"  
+        oncommand="checkAndMoveTab(event); "/>
+    <button id="button"  
+		onclick="buttonClicked();" label="Stopped" style="color:Green" />
+ </statusbar>
+</overlay>

@@ -1,0 +1,53 @@
+------------WorkWork--------------- 
+
+Description:
+	A Firefox addon for a better workflow.
+	
+countLinks module:
+    Counts the links, opened in a new tab on a site and blocks after N opened for some time T.
+	
+Pomodoro module:
+	http://www.pomodorotechnique.com/
+	
+	or more simply explained
+	
+	while(workTime){
+		for(int i = 0; i < 4; ++i){ 
+			work(25); //minutes
+			break(5); //minutes
+		}
+		break(25); // minutes
+	}
+
+sortWork module:
+	Not yet implemented.
+
+Note:
+	This program is a work-in-progress. It`s usage may lead to crashes. 
+	The owner doesn`t hold responsibility, if it leads to damage of any kind.
+	
+?Usage:
+?TODO
+	
+Credits:
+	The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. 
+	All rights for it belong to him.
+
+	alarm_beep.wav is downloaded from wavsource.com and the copyrights belong to it`s owner.
+
+Copyright (C) 2012 DuMuT6p
+
+This file is part of WorkWork.
+
+WorkWork is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+WorkWork is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with WorkWork.  If not, see <http://www.gnu.org/licenses/>.

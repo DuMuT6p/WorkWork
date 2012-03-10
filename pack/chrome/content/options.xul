@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow
+	id="workwork-prefs"
+    title="WorkWork Preferences"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane label="WorkWork Preferences">
+		<preferences>
+			<preference id="pref_workTime" name="extensions.WorkWork.workTime" type="int"/>
+			<preference id="pref_breakTime" name="extensions.WorkWork.breakTime" type="int"/>
+			<preference id="pref_showAlert" name="extensions.WorkWork.showAlert" type="bool"/>
+			
+			<preference id="pref_timetToBlock" name="extensions.WorkWork.timeToBlock" type="int"/>
+			<preference id="pref_allowedLinks" name="extensions.WorkWork.allowedLinks" type="int"/>
+		</preferences>
+
+		<hbox align="center">
+			<label control="workTime" value="The interval for working: "/>
+			<textbox preference="pref_workTime" id="workTime" maxlength="2"/>
+			<br />
+			<label control="breakTime" value="The interval for the break: "/>
+			<textbox preference="pref_breakTime" id="breakTime" maxlength="2"/>
+			<br />
+			<label control="workTime" value="Show a pop-up alert? "/>
+			<textbox preference="pref_showAlert" id="showAlert" maxlength="4"/>
+		</hbox>	
+
+	</prefpane>
+
+</prefwindow>

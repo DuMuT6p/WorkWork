@@ -33,9 +33,9 @@
 	var stopNextTab = false;
 	var firstLink = true;
 	
-	// user set options
-	var timeToBlock = 1; // in minutes
-	var allowedLinks = 2;
+	// variables set by user - set in default preferences, left here for clarity, will be removed later latter
+//	var timeToBlock = 1; // in minutes
+//	var allowedLinks = 2;
 	
 	function isLink(elementName){
 		if(elementName == "a" || elementName == "A")

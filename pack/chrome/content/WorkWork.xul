@@ -2,6 +2,8 @@
 <overlay id="WorkWork" 
 		xmlns:html="http://www.w3.org/1999/xhtml"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript"
+  src="chrome://WorkWork/content/WorkClass.js"/>
  <statusbar id="status-bar">
   <statusbarpanel id="my-panel" label="Hello, Idiot"  />
     <script type="text/javascript" src="moveTab.js"></script>

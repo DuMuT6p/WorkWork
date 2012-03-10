@@ -36,9 +36,10 @@
 	</html:audio>
 	*/
 	
-	// variables set by user
-	var workTime = 25; // in minutes
-	var breakTime = 5; // in minutes
+	// variables set by user - set in default preferences, left here for clarity, will be removed later latter
+//	var WorkClass.workTime = 25; // in minutes
+//	var WorkClass.breakTime = 5; // in minutes
+//	var WorkClass.showAlert = true; // shows a pop up alert
 	//var bigBreakTime = 1; // in minutes
 	//var sessions = 4; // number of sessions before big break
 
@@ -96,11 +97,11 @@
 		var d = new Date();
 		var currentTime = d.getTime();
 		if(pomodoroState == 'work'){
-			if((currentTime - sessionTime)/60000 > workTime)
+			if((currentTime - sessionTime)/60000 > WorkClass.workTime)
 				takeBreak();
 		}
 		else if(pomodoroState == 'break'){
-			if((currentTime - sessionTime)/60000 > breakTime)
+			if((currentTime - sessionTime)/60000 > WorkClass.breakTime)
 				endBreak();				
 		}
 		
@@ -110,7 +111,8 @@
 	function takeBreak(){
 		pomodoroState = 'break';
 		alarm.play(alarmURL);
-		alert("Take a break!"); // TODO: make this optional
+		if(WorkClass.showAlert)
+			alert("Take a break!"); // TODO: make this optional
 		
 		var b = document.getElementById('button');
 		b.label = "Break";
@@ -123,7 +125,8 @@
 	function endBreak(){
 		pomodoroState = 'work';
 		alarm.play(alarmURL);
-		alert("Get back to work!"); // TODO: make this optional
+		if(WorkClass.showAlert)
+			alert("Get back to work!"); // TODO: make this optional
 		
 		var b = document.getElementById('button');
 		b.label = "Work!";

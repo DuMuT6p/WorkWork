@@ -5,7 +5,7 @@
   
   <Description about="urn:mozilla:install-manifest">  
     <em:id>WorkWork@DuMuT6p.joke</em:id>  
-    <em:version>0.1</em:version>  
+    <em:version>0.2</em:version>  
     <em:type>2</em:type>  
      
     <!-- Target Application this extension can install into,   
@@ -14,7 +14,7 @@
       <Description>  
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>  
         <em:minVersion>1.5</em:minVersion>  
-        <em:maxVersion>9.0.*</em:maxVersion>  
+        <em:maxVersion>10.0.*</em:maxVersion>  
       </Description>  
     </em:targetApplication>  
      
@@ -22,6 +22,7 @@
     <em:name>WorkWork</em:name>  
     <em:description>An extension for selfcontrol and better workflow!</em:description>  
     <em:creator>DuMuT6p</em:creator>  
-    <em:homepageURL>DuMuT6p`s github</em:homepageURL>  
+    <em:homepageURL>DuMuT6p`s github</em:homepageURL>
+	<em:optionsURL>chrome://WorkWork/content/options.xul</em:optionsURL>
   </Description>        
 </RDF>  

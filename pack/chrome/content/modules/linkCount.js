@@ -33,7 +33,7 @@
 	var stopNextTab = false;
 	var firstLink = true;
 	
-	// variables set by user - set in default preferences, left here for clarity, will be removed later latter
+	// variables set by user - set in default preferences, left here for clarity, will be removed later
 //	var timeToBlock = 1; // in minutes
 //	var allowedLinks = 2;
 	
@@ -80,12 +80,7 @@
 				properties.linkTimeLeft = d.getTime(); // working in miliseconds 
 				link[refererURL] = properties;
 			}
-			
-
-			
 		}
-		
-
 	}
 	
 	window.addEventListener("click", linkCount, false);

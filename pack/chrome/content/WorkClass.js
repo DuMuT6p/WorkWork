@@ -17,13 +17,14 @@
     along with WorkWork.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+// Observer class for the preferences variables
 var WorkClass = {
 	prefs: null,
 	// for Pomodoro module
 	workTime: 25,
 	breakTime: 5,
 	showAlert: true,
-	// countLinks module
+	// for countLinks module
 	timeToBlock: 5,
 	allowedLinks: 2,
 	

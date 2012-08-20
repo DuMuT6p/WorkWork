@@ -35,17 +35,19 @@
 		<html:source src="18384__inferno__largex.wav.ogg" type="audio/ogg" />
 	</html:audio>
 	*/
-	
-	// variables set by user - set in default preferences, left here for clarity, will be removed later latter
+
+/*	
+	// variables set by user - set in default preferences, left here for clarity, will be removed later
 //	var WorkClass.workTime = 25; // in minutes
 //	var WorkClass.breakTime = 5; // in minutes
 //	var WorkClass.showAlert = true; // shows a pop up alert
 	//var bigBreakTime = 1; // in minutes
 	//var sessions = 4; // number of sessions before big break
+*/
 
 	// variables set in execution
 	var sessionTime; // in miliseconds
-	//var currenSession; // current number of session
+	//var currentSession; // current number of session
 	var t; // setTimeout object
 	var pomodoroState = 'noWork'; // work, break, noWork
 		
@@ -56,8 +58,9 @@
 	
 	var alarmURI = Components.classes["@mozilla.org/network/io-service;1"]  
                           .getService(Components.interfaces.nsIIOService)  
-                          .newURI("chrome://workwork/content/alarm_beep.wav", null, null);  
-    try {  
+                          .newURI("chrome://WorkWork/content/sounds/alarm_beep.wav", null, null);  
+    // Checking URI for future feature of adding custom sound files
+	try {  
       var alarmURL = alarmURI.QueryInterface(Components.interfaces.nsIURL);  
     }  
     catch(e) {  

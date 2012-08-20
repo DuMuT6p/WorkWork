@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow
+	id="workwork-prefs"
+    title="WorkWork Preferences"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane label="WorkWork Preferences">
+	
+		<script type="application/javascript" src="chrome://WorkWork/content/resetPreferences.js" />
+	
+		<preferences>
+			<preference id="pref_workTime" name="extensions.WorkWork.workTime" type="int"/>
+			<preference id="pref_breakTime" name="extensions.WorkWork.breakTime" type="int"/>
+			<preference id="pref_showAlert" name="extensions.WorkWork.showAlert" type="bool"/>
+			
+			<preference id="pref_timeToBlock" name="extensions.WorkWork.timeToBlock" type="int"/>
+			<preference id="pref_allowedLinks" name="extensions.WorkWork.allowedLinks" type="int"/>
+		</preferences>
+
+		<groupbox>
+			<caption label="Pomodoro module" style="color:grey" />
+			<hbox align="center">
+				<label control="workTime" value="The interval for working: "/>
+				<textbox preference="pref_workTime" id="workTime" type="number" maxlength="2"/>
+			</hbox>	
+			
+			<hbox align="center">
+				<label control="breakTime" value="The interval for the break: "/>
+				<textbox preference="pref_breakTime" id="breakTime" type="number" maxlength="2"/>
+			</hbox>
+
+			<checkbox preference="pref_showAlert" id="showAlert" label="Show a pop-up alert? "/>
+		</groupbox>
+		<groupbox>
+			<caption label="CountLinks module" style="color:grey" />
+			<hbox align="center">
+				<label control="timeToBlock" value="Time to block: "/>
+				<textbox preference="pref_timeToBlock" id="timeToBlock" type="number" maxlength="2"/>
+			</hbox>	
+			
+			<hbox align="center">
+				<label control="allowedLinks" value="Number of allowed links: "/>
+				<textbox preference="pref_allowedLinks" id="allowedLinks" type="number" maxlength="2"/>
+			</hbox>
+		</groupbox>
+
+		<button label="Reset to Defaults" onclick="resetToDefaults();" />
+		
+	</prefpane>
+
+</prefwindow>

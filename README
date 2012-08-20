@@ -4,7 +4,7 @@ Description:
 	A Firefox addon for a better workflow.
 	
 countLinks module:
-    Counts the links, opened in a new tab on a site and blocks after N opened for some time T.
+    Counts the links, opened in a new tab from a site and blocks after N opened, for some time T.
 	
 Pomodoro module:
 	http://www.pomodorotechnique.com/
@@ -22,12 +22,8 @@ Pomodoro module:
 sortWork module:
 	Not yet implemented.
 
-Note:
-	This program is a work-in-progress. It`s usage may lead to crashes. 
-	The owner doesn`t hold responsibility, if it leads to damage of any kind.
-	
-?Usage:
-?TODO
+Git repository:
+	https://github.com/DuMuT6p/WorkWork
 	
 Credits:
 	The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. 

@@ -6,9 +6,9 @@
   src="chrome://WorkWork/content/WorkClass.js"/>
  <statusbar id="status-bar">
   <statusbarpanel id="my-panel" label="Hello, Idiot"  />
-    <script type="text/javascript" src="moveTab.js"></script>
-    <script type="text/javascript" src="clock.js"></script>
-    <script type="text/javascript" src="linkCount.js"></script>
+    <script type="application/javascript" src="chrome://workwork/content/modules/moveTab.js"></script>
+    <script type="application/javascript" src="chrome://workwork/content/modules/clock.js"></script>
+    <script type="application/javascript" src="chrome://workwork/content/modules/linkCount.js"></script>
 
 	<button id="button1" label="Hit Me Baby"  
         oncommand="checkAndMoveTab(event); "/>
